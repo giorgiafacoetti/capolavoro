@@ -8,16 +8,19 @@
 			som+=1
 			}
 			function sbagliata(){
-			som-=0,5
+			som-=1
 			}
 			function elaboraTest(){
 			if(som<0)
-			document.getElementById("testo").innerHTML+="...Direi che non conosci per niente Spiaggia Romea"
+			document.getElementById("testo").innerHTML+="...Direi che non conosci per niente Spiaggia Romea e il nostro viaggio"
 			else
 			if(som==0)
-			document.getElementById("testo").innerHTML+="Potresti sapere più cose...ma almeno hai una conoscenza base"
+			document.getElementById("testo").innerHTML+="Potresti sapere più cose..."
 			else
-			document.getElementById("testo").innerHTML+="Complimenti! Conosci Spiaggia Roema ed il nostro viaggio"
+			if (som==9)
+			document.getElementById("testo").innerHTML+="Complimenti! Tutto perfetto! Sei davvero fortissim*"
+			else
+			document.getElementById("testo").innerHTML+="Woow! brav* brav*!! conosci molto bene il nostro viaggio"
 			}
 
 </script>
@@ -134,8 +137,9 @@
 				<br>
 				<input type="radio" name="domanda9" onclick="corretta()">Siamo stati in riva al mare
 				<br>
+				<br>
 
-				<input type="button" value="verifica" onclick="elaboraTest()">
+				<input type="button" value="Controlla le domande..." onclick="elaboraTest()">
 				<br>
 				<br>
 <p id="testo">Giudizio: </p>
